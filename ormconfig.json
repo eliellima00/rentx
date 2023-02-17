@@ -4,6 +4,7 @@
   "username": "docker",
   "password": "ignite",
   "database": "rentx",
+  "logging":true,
   "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
   "cli": {
     "migrationsDir": "./src/shared/infra/typeorm/migrations"
