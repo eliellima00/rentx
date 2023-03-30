@@ -32,7 +32,6 @@ class CarsRepository implements ICarsRepository {
       licence_plate,
       name,
       specifications,
-      id,
     });
 
     await this.repository.save(car);
