@@ -12,7 +12,7 @@ interface IRequest {
   password: string;
 }
 
-injectable();
+@injectable()
 class ResetPasswordUserUseCase {
   constructor(
     @inject("UsersTokensRepository")
@@ -41,9 +41,8 @@ class ResetPasswordUserUseCase {
     }
 
     const user = await this.usersRepository.findById(userToken.user_id);
-
+    console.log(typeof password);
     user.password = await hash(password, 8);
-
     await this.usersRepository.create(user);
 
     await this.usersTokensRepository.deleteById(userToken.id);
