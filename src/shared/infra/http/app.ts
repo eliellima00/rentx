@@ -1,4 +1,5 @@
 import "reflect-metadata";
+import { factoryConfigAWS } from "@utils/factoryConfigAWS";
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import swaggerUI from "swagger-ui-express";
@@ -19,6 +20,7 @@ app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerFile));
 
 app.use(router);
 createConnection();
+factoryConfigAWS();
 
 app.use(
   (err: Error, request: Request, response: Response, next: NextFunction) => {
