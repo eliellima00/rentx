@@ -4,14 +4,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.SendForgotPasswordMailUseCase = void 0;
-var _IUsersRepository = require("@modules/accounts/repositories/IUsersRepository");
-var _IUsersTokensRepository = require("@modules/accounts/repositories/IUsersTokensRepository");
+var _IUsersRepository = require("../../repositories/IUsersRepository");
+var _IUsersTokensRepository = require("../../repositories/IUsersTokensRepository");
 var _path = require("path");
 var _tsyringe = require("tsyringe");
 var _uuid = require("uuid");
-var _IDateProvider = require("@shared/container/providers/DateProvider/IDateProvider");
-var _IMailProvider = require("@shared/container/providers/MailProvider/IMailProvider");
-var _AppError = require("@shared/errors/AppError");
+var _IDateProvider = require("../../../../shared/container/providers/DateProvider/IDateProvider");
+var _IMailProvider = require("../../../../shared/container/providers/MailProvider/IMailProvider");
+var _AppError = require("../../../../shared/errors/AppError");
 var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class;
 let SendForgotPasswordMailUseCase = (_dec = (0, _tsyringe.injectable)(), _dec2 = function (target, key) {
   return (0, _tsyringe.inject)("UsersRepository")(target, undefined, 0);

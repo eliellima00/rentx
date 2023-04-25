@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.usersRoutes = void 0;
-var _ProfileUserController = require("@modules/accounts/useCases/profileUserUseCase/ProfileUserController");
+var _ProfileUserController = require("../../../../modules/accounts/useCases/profileUserUseCase/ProfileUserController");
 var _express = require("express");
 var _multer = _interopRequireDefault(require("multer"));
 var _upload = _interopRequireDefault(require("../../../../config/upload"));

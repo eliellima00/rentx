@@ -4,9 +4,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.UpdateUserAvatarUseCase = void 0;
-var _IUsersRepository = require("@modules/accounts/repositories/IUsersRepository");
+var _IUsersRepository = require("../../repositories/IUsersRepository");
 var _tsyringe = require("tsyringe");
-var _IStorageProvider = require("@shared/container/providers/StorageProvider/IStorageProvider");
+var _IStorageProvider = require("../../../../shared/container/providers/StorageProvider/IStorageProvider");
 var _dec, _dec2, _dec3, _dec4, _dec5, _class;
 let UpdateUserAvatarUseCase = (_dec = (0, _tsyringe.injectable)(), _dec2 = function (target, key) {
   return (0, _tsyringe.inject)("UsersRepository")(target, undefined, 0);

@@ -4,8 +4,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.ProfileUserUseCase = void 0;
-var _UserMap = require("@modules/accounts/mapper/UserMap");
-var _IUsersRepository = require("@modules/accounts/repositories/IUsersRepository");
+var _UserMap = require("../../mapper/UserMap");
+var _IUsersRepository = require("../../repositories/IUsersRepository");
 var _tsyringe = require("tsyringe");
 var _dec, _dec2, _dec3, _class;
 let ProfileUserUseCase = (_dec = function (target, key) {

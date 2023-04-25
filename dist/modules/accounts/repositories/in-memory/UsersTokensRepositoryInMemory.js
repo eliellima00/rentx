@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.UsersTokensRepositoryInMemory = void 0;
-var _UserTokens = require("@modules/accounts/infra/typeorm/entities/UserTokens");
+var _UserTokens = require("../../infra/typeorm/entities/UserTokens");
 class UsersTokensRepositoryInMemory {
   constructor() {
     this.usersTokens = [];

@@ -1,11 +1,11 @@
 "use strict";
 
-var _UsersRepositoryInMemory = require("@modules/accounts/repositories/in-memory/UsersRepositoryInMemory");
-var _UsersTokensRepositoryInMemory = require("@modules/accounts/repositories/in-memory/UsersTokensRepositoryInMemory");
-var _AuthenticateUserUseCase = require("@modules/accounts/useCases/authenticateUser/AuthenticateUserUseCase");
-var _CreateUserUseCase = require("@modules/accounts/useCases/createUser/CreateUserUseCase");
-var _DayjsDateProvider = require("@shared/container/providers/DateProvider/implementations/DayjsDateProvider");
-var _AppError = require("@shared/errors/AppError");
+var _UsersRepositoryInMemory = require("../../repositories/in-memory/UsersRepositoryInMemory");
+var _UsersTokensRepositoryInMemory = require("../../repositories/in-memory/UsersTokensRepositoryInMemory");
+var _AuthenticateUserUseCase = require("./AuthenticateUserUseCase");
+var _CreateUserUseCase = require("../createUser/CreateUserUseCase");
+var _DayjsDateProvider = require("../../../../shared/container/providers/DateProvider/implementations/DayjsDateProvider");
+var _AppError = require("../../../../shared/errors/AppError");
 let authenticateUserUseCase;
 let usersRepositoryInMemory;
 let userTokensRepositoryInMemory;

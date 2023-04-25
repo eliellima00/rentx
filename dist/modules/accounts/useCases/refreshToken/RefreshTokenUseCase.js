@@ -4,12 +4,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.RefreshTokenUseCase = void 0;
-var _auth = _interopRequireDefault(require("@config/auth"));
-var _IUsersTokensRepository = require("@modules/accounts/repositories/IUsersTokensRepository");
+var _auth = _interopRequireDefault(require("../../../../config/auth"));
+var _IUsersTokensRepository = require("../../repositories/IUsersTokensRepository");
 var _jsonwebtoken = require("jsonwebtoken");
 var _tsyringe = require("tsyringe");
-var _IDateProvider = require("@shared/container/providers/DateProvider/IDateProvider");
-var _AppError = require("@shared/errors/AppError");
+var _IDateProvider = require("../../../../shared/container/providers/DateProvider/IDateProvider");
+var _AppError = require("../../../../shared/errors/AppError");
 var _dec, _dec2, _dec3, _dec4, _dec5, _class;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 let RefreshTokenUseCase = (_dec = (0, _tsyringe.injectable)(), _dec2 = function (target, key) {

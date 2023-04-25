@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.AuthenticateUserController = void 0;
-var _AuthenticateUserUseCase = require("@modules/accounts/useCases/authenticateUser/AuthenticateUserUseCase");
+var _AuthenticateUserUseCase = require("./AuthenticateUserUseCase");
 var _tsyringe = require("tsyringe");
 class AuthenticateUserController {
   async handle(request, response) {

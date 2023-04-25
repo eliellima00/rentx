@@ -4,11 +4,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.carsRoutes = void 0;
-var _upload = _interopRequireDefault(require("@config/upload"));
-var _CreateCarController = require("@modules/cars/useCases/CreateCar/CreateCarController");
-var _CreateCarSpecificationController = require("@modules/cars/useCases/createCarSpecification/CreateCarSpecificationController");
-var _ListAvailableCarsController = require("@modules/cars/useCases/listAvailableCars/ListAvailableCarsController");
-var _UploadCarImagesController = require("@modules/cars/useCases/uploadCarImages/UploadCarImagesController");
+var _upload = _interopRequireDefault(require("../../../../config/upload"));
+var _CreateCarController = require("../../../../modules/cars/useCases/CreateCar/CreateCarController");
+var _CreateCarSpecificationController = require("../../../../modules/cars/useCases/createCarSpecification/CreateCarSpecificationController");
+var _ListAvailableCarsController = require("../../../../modules/cars/useCases/listAvailableCars/ListAvailableCarsController");
+var _UploadCarImagesController = require("../../../../modules/cars/useCases/uploadCarImages/UploadCarImagesController");
 var _express = require("express");
 var _multer = _interopRequireDefault(require("multer"));
 var _ensureAdmin = require("../middlewares/ensureAdmin");

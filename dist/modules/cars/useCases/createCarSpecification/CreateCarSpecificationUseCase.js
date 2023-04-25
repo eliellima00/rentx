@@ -4,10 +4,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.CreateCarSpecificationUseCase = void 0;
-var _ICarsRepository = require("@modules/cars/repositories/ICarsRepository");
-var _ISpecificationsRepository = require("@modules/cars/repositories/ISpecificationsRepository");
+var _ICarsRepository = require("../../repositories/ICarsRepository");
+var _ISpecificationsRepository = require("../../repositories/ISpecificationsRepository");
 var _tsyringe = require("tsyringe");
-var _AppError = require("@shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 var _dec, _dec2, _dec3, _dec4, _dec5, _class;
 let CreateCarSpecificationUseCase = (_dec = (0, _tsyringe.injectable)(), _dec2 = function (target, key) {
   return (0, _tsyringe.inject)("CarsRepository")(target, undefined, 0);

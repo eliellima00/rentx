@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.ListAvailableCarsUseCase = void 0;
-var _ICarsRepository = require("@modules/cars/repositories/ICarsRepository");
+var _ICarsRepository = require("../../repositories/ICarsRepository");
 var _tsyringe = require("tsyringe");
 var _dec, _dec2, _dec3, _dec4, _class;
 let ListAvailableCarsUseCase = (_dec = (0, _tsyringe.injectable)(), _dec2 = function (target, key) {

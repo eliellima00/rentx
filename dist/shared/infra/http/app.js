@@ -9,12 +9,12 @@ require("dotenv/config");
 var _express = _interopRequireDefault(require("express"));
 require("express-async-errors");
 var _swaggerUiExpress = _interopRequireDefault(require("swagger-ui-express"));
-var _AppError = require("@shared/errors/AppError");
-var _typeorm = _interopRequireDefault(require("@shared/infra/typeorm"));
-var _upload = _interopRequireDefault(require("@config/upload"));
+var _AppError = require("../../errors/AppError");
+var _typeorm = _interopRequireDefault(require("../typeorm"));
+var _upload = _interopRequireDefault(require("../../../config/upload"));
 var _swagger = _interopRequireDefault(require("../../../swagger.json"));
 var _routes = require("./routes");
-require("@shared/container");
+require("../../container");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const app = (0, _express.default)();
 exports.app = app;
